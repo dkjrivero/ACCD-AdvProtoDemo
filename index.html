@@ -75,31 +75,31 @@
       Code Examples:
     </h3>
     <p style="margin-right: 800px">
-      // adds honey when bee brings flower back  
-      void addHoney() {
-      this.honeyCount++;
+      // adds honey when bee brings flower back<br>
+      void addHoney() {<br>
+      this.honeyCount++;<br>
       this.size += 0.5;}
     </p>
     <p style="margin-right: 800px">
-      // caculates distance from bee to flower  
-      double distanceToFlower(Sunflower flower) {
+      // caculates distance from bee to flower<br>
+      double distanceToFlower(Sunflower flower) {<br>
       return Math.sqrt((this.position.x - flower.position.x) * (this.position.x - 
       flower.position.x) + (this.position.y - flower.position.y) * (this.position.y - 
       flower.position.y));}
     </p>
     <p style="margin-right: 800px">
-      // if bee is not busy check distance to flower, go to closest flower and set as new target
-      if (flowers.size() != 0 && !busy) {
-      print("seeking\n");
-      if (target == null) {
-      Sunflower closest = flowers.get(0);
-      double closestDist = Double.MAX_VALUE;
+      // if bee is not busy check distance to flower, go to closest flower and set as new target<br>
+      if (flowers.size() != 0 && !busy) {<br>
+      print("seeking\n");<br>
+      if (target == null) {<br>
+      Sunflower closest = flowers.get(0);<br>
+      double closestDist = Double.MAX_VALUE;<br>
          
-      // checks distance to each flower and finds closest 
-      for (Sunflower flower : flowers) { 
-      double currDist = this.distanceToFlower(flower);
-      if (currDist <= closestDist && !hive.targets.containsKey(flower)) {
-      closest = flower;
+      // checks distance to each flower and finds closest <br>
+      for (Sunflower flower : flowers) { <br>
+      double currDist = this.distanceToFlower(flower);<br>
+      if (currDist <= closestDist && !hive.targets.containsKey(flower)) {<br>
+      closest = flower;<br>
       closestDist = currDist;}
       }
     </p>
