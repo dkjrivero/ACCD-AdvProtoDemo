@@ -73,31 +73,39 @@ void draw() {
 //  }
 //}
 void serialEvent(Serial conn) {
-  float serialValue[] = float(split(trim(conn.readString()), ','));
-  //nVc = map(float(serialValue), 0, 4095, 0, 11);
-  //nVp = map(float(serialValue), 0, 4095, 0, 11);
-  //if(currentValue > previous) {
-  //  hive.bees.add(new Bee());
-  //  else if(nVc < nVp) {
-  //    hive.bees.remove(nVp);
-  //  }
-  //}
+  String input = trim(conn.readString());
+  int button = Integer.parseInt(input.substring(input.length() - 1));
+  String[] pieces = split(input, ',');
+  String[] potentiometerPieces = split(pieces[0], ' ');
+  String[] forceSensorPieces = split(pieces[1], ' ');
+  float potentiometer = -1, forceSensor = -1;
+  printArray(""); //program crashes w out this line dunno why
+  try {
+    potentiometer = Float.parseFloat(potentiometerPieces[1]);
+  } catch (Exception e) {
+    println(e.toString());
+  }
+  try {
+    forceSensor = Float.parseFloat(forceSensorPieces[3]);
+  } catch (Exception e) {
+    println(e.toString());
+  }
   pv = cv;
-  cv = (serialValue[0]);
+  cv = potentiometer;
   if(cv != pv && cv > 4094) {
     hive.bees.add(new Bee());
   }
   else if (cv != pv && cv < 1) {
     hive.bees.remove(hive.bees.size() - 1);
   }
-  println(serialValue);
+  printArray(serialValue);
   //nVp = nVc
  
   //if(values.length == 3){
   //  posX = map(values[0], 0, 4095, 0, width);
   //}
   previousValue = currentValue;
-  currentValue = ((int) serialValue[2]);
+  currentValue = button;
   if (previousValue == 0 && currentValue == 1){ 
     flowers.add(new Sunflower());
   }
