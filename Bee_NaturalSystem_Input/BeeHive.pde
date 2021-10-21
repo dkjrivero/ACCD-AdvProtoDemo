@@ -10,7 +10,7 @@ class BeeHive {
     this.position = new PVector(50, 50);
     this.size = random(3, 8);
     this.hiveColor = color(155, 103, 60);
-    this.honeyCount = 0;
+    this.honeyCount = 5;
     this.beeHoneyThreshold = int(random(5, 10)); // does not add 
     this.bees = new ArrayList<Bee>();
     this.bees.add(new Bee());
@@ -20,6 +20,9 @@ class BeeHive {
   void addHoney() {
     this.honeyCount++;
       this.size += 0.5;
+  }
+  void removeHoney(int amount){
+    honeyCount = honeyCount - amount;
   }
 //draws beehive
   void display() {
