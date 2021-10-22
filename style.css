@@ -1,0 +1,107 @@
+:root {
+  
+  font-family: 'poppins', sans-serif;
+
+  color: #000000;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.tk {
+  font-weight: 400;
+  font-size: 50px;
+  margin-top: 45px;
+  float: left;
+}
+
+.main-nav {
+  margin-top: 55px;
+  float: right;
+}
+
+.main-nav li{
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 8px 20px;
+}
+
+ul li {
+  color: #fff;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+div {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.project-header {
+  background-color: #ffffff;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+.project-title {
+  position: absolute;
+  top: 150px;
+  left: 10%;
+}
+
+.diagram-img {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+img {
+  width: 100%
+}
+
+h4 {
+  margin-top: 40px;
+}
+
+.vimeo-video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  height: 500px;
+  width: 100%;
+}
