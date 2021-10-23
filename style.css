@@ -83,7 +83,7 @@ div {
 
 .diagram-img {
   display:block;
-  margin-left: auto;
+  margin-left: -80px;
   margin-right: auto;
   width: 80%;
   padding-bottom: 20px;
