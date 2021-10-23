@@ -102,20 +102,23 @@
   
     <h3>
       Code Examples:
-    </h3>
+    </h3><br><br>
+    <img style="width: 40%;"src="./bee_4.jpg" alt="bee_4.jpg"><br>
     <pre><code>
       // adds honey when bee brings flower back<br>
       void addHoney() {<br>
       this.honeyCount++;<br>
       this.size += 0.5;}
-    </code></pre>
+    </code></pre><br><br>
+    <img style="width: 40%;"src="./bee_2.jpg" alt="bee_2.jpg"><br>
     <pre><code>
       // caculates distance from bee to flower<br>
       double distanceToFlower(Sunflower flower) {<br>
       return Math.sqrt((this.position.x - flower.position.x) * (this.position.x - 
       flower.position.x) + (this.position.y - flower.position.y) * (this.position.y - 
       flower.position.y));}
-    </code></pre>
+    </code></pre><br><br>
+    <img style="width: 40%;"src="./bee_3.jpg" alt="bee_3.jpg"><br>
     <pre><code>
       // if bee is not busy check distance to flower, go to closest flower and set as new target<br>
       if (flowers.size() != 0 && !busy) {<br>
@@ -123,21 +126,8 @@
       if (target == null) {<br>
       Sunflower closest = flowers.get(0);<br>
       double closestDist = Double.MAX_VALUE;}}
-    </code></pre>
-    <pre><code>
-      // checks distance to each flower and finds closest <br>
-      for (Sunflower flower : flowers) { <br>
-      double currDist = this.distanceToFlower(flower);<br>
-      if (currDist <= closestDist && !hive.targets.containsKey(flower)) {<br>
-      closest = flower;<br>
-      closestDist = currDist;}}
-    </code></pre>
-  
-    
-    <img style="width: 40%;margin-top: 200px;"src="./bee_1.jpg" alt="bee_1.jpg">
-    <img style="width: 40%;"src="./bee_2.jpg" alt="bee_2.jpg">
-    <img style="width: 40%;"src="./bee_3.jpg" alt="bee_3.jpg">
-    <img style="width: 40%;"src="./bee_4.jpg" alt="bee_4.jpg">
+    </code></pre><br><br>
+
   </div>
 </div>
 </html>
