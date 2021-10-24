@@ -111,7 +111,7 @@
       this.size += 0.5;}
     </code></pre><br><br>
     <img style="width: 40%;"src="./bee_2.jpg" alt="bee_2.jpg"><br>
-    <pre><code style="margin-left: -80px;">
+    <pre><code>
       // caculates distance from bee to flower<br>
       double distanceToFlower(Sunflower flower) {<br>
       return Math.sqrt((this.position.x - flower.position.x) * (this.position.x - 
@@ -120,7 +120,7 @@
     </code></pre><br><br>
     <img style="width: 40%;"src="./bee_3.jpg" alt="bee_3.jpg"><br>
     <pre><code>
-      // if bee is not busy check distance to flower, go to closest flower and set as new target<br>
+      // if bee is not busy, go to closest flower and set as new target<br>
       if (flowers.size() != 0 && !busy) {<br>
       print("seeking\n");<br>
       if (target == null) {<br>
