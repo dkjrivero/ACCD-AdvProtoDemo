@@ -9,7 +9,7 @@
 }
 
 .row {
-  float: left;
+  margin-left: 10%;
 }
 .dr {
   font-weight: 400;
