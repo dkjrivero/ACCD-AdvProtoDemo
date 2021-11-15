@@ -9,8 +9,7 @@
 }
 
 .row {
-  margin-left: 10%;
-  margin-right: 20%;
+  float: left;
 }
 .dr {
   font-weight: 400;
