@@ -11,12 +11,6 @@
 .row {
   margin-right: 15%;
 }
-.dr {
-  font-weight: 400;
-  font-size: 20px;
-  margin-top: 65px;
-  float: left;
-}
 
 .main-nav {
   margin-top: 55px;
@@ -78,25 +72,4 @@ div {
   position: absolute;
   top: 150px;
   left: 10%;
-}
-
-.diagram-img {
-  display:block;
-  margin-left: -80px;
-  margin-right: auto;
-  width: 80%;
-  padding-bottom: 20px;
-}
-
-img {
-  width: 100%
-}
-
-.vimeo-video {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 500px;
-  height: 50px;
-  width: 30%;
 }
