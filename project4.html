@@ -39,26 +39,53 @@
         <br><br>
         <iframe src="https://player.vimeo.com/video/645620162?h=57a10678e2" width="1000" height="700" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen ></iframe>
         <h3>
-            How often do we open our fridge and does temperature and light play a factor?
+          Using User Interaction to ease the way that users find their light switch without having to stumble across a room.
         </h3><br>
         <p style="margin-right: 20%;">
-            Using a temperature, light, and proximity sensor I was able to capture and store data, 
-            allowing me to create graphical elements that allowed me to visualize the amount of times 
-            a person would open the fridge and if temperature and time of day played in as a factor.
-            <br><br>
-            One of the challenge throughout this project was trying to visualize theses data entires 
-            in way that could be easily compared to the others data entires. So by creating a graphical 
-            chart, it helped to me to be able to fully visualize the data as well as compare it to the 
-            other data point entires. 
+          When getting home, especially at night, we tend to come home to a dark house and with that most 
+          users will stumble across a room trying to find their light switch. With that in mind I wanted 
+          to create an easier way for them to find their way around a room to turn on their light switch.
+          <br><br>
+          I am hoping to achieve simplicity and ease of use when it comes to setting up your room. When we 
+          walk into our room, sometimes we just want to grab something and go, but it will take us longer 
+          because we try to find it in a dark room, where if we knew where the light switch was, we could 
+          easily turn the light on find what we need and leave. I plan to measure how successful this project 
+          will be by determining how long it would take for users to find the light switch or assigning a task 
+          to find an object with and without the animating arrow.
         </p><br><br>
+        <h3>
+          Background
+        </h3><br>
+        <p style="margin-right: 20%;">
+         Some light switches have an automatic sensor that when no light is detected will display an led light on 
+          the light switch, but that also takes up a lot of electricity as it is constantly running when the light 
+          is off and also can be annoying for users who like their room to be pitch black when the lights are turned off.
+        </p><br><br>
+        <h3>
+          Tools and Methods 
+        </h3><br>
+        <p style="margin-right: 20%;">
+          Using an ESP32, to set up the code in Arduino and being able to connect it Wi-Fi.<br>
+          Using the PIR Sensor, to detect motion person enters the room.<br>
+          Using the Photocell Sensor, to detect the amount of light coming into the room at the time.<br>
+          Using the Neopixel 8x8 Matrix, when motion is detected, and no light is coming into the room to display an animating arrow over the light switch.
+        </p><br><br>
+
         <img style="width: 40%;"src="./p4hueristic.png" alt="p4hueristic.png">
         <br><br><br><br>
         <h3>
-            Story Board
+          Story Board
         </h3><br>
-        <img style="width: 40%;"src="./VisualDay.png" alt="VisualDay.png">
-        <img style="width: 40%;"src="./VisualNight.png" alt="VisualNight.png">
+        <img style="width: 80%;"src="./storyboard.jpg" alt="Vstoryboard.jpg">
         <br><br><br>
+        <h3>
+          Future Iterations  
+        </h3><br>
+        <p style="margin-right: 20%;">
+          UFor the future, I want to add a time and temperature sensor that would then be used to collect the current 
+          time and temperature to then be displayed on the led matrix after the light was turned on and stay on for 30 
+          seconds and would turn on again every time it detects motion when the light is on.
+        </p><br><br>
 
     </div>
 </div>
