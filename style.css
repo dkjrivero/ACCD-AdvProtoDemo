@@ -14,13 +14,11 @@
 
 .main-nav {
   margin-top: 55px;
-  float: right;
 }
 
 .main-nav li{
   display: inline-block;
   margin-left: 20px;
-  margin-right: 20px;
   padding: 8px 20px;
 }
 
